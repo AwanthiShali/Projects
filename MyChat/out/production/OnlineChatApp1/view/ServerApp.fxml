@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerAppController">
+    <children>
+        <Label fx:id="lblName" alignment="CENTER" layoutY="538.0" prefHeight="42.0" prefWidth="162.0">
+            <font>
+                <Font name="Lucida Fax Regular" size="17.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="imgCamera" fitHeight="42.0" fitWidth="82.0" layoutX="171.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../resources/images/camera.png" />
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtMessage" layoutY="579.0" prefHeight="42.0" prefWidth="367.0" promptText="Type Your Message Here" style="-fx-padding: 0.3em 1em 0.3em 1em;;">
+            <font>
+                <Font name="Lucida Fax Regular" size="17.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="btnSend" buttonType="RAISED" layoutX="367.0" layoutY="586.0" onAction="#btnSendOnAction" prefHeight="28.0" prefWidth="82.0" style="-fx-background-color: #1e86ab; -fx-background-radius: 20px;" text="Send" textFill="WHITE">
+            <font>
+                <Font name="Lucida Fax Regular" size="17.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <JFXTextArea fx:id="txtArea" editable="false" layoutX="-1.0" prefHeight="536.0" prefWidth="464.0">
+         <font>
+            <Font name="Lucida Fax Regular" size="15.0" />
+         </font></JFXTextArea>
+    </children>
+</AnchorPane>

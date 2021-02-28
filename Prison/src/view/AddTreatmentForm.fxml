@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="context" prefHeight="654.0" prefWidth="1340.0" style="-fx-background-color: linear-gradient(to right top, #f6f6f6, #c3c3c3, #929292, #646464, #3a3a3a, #383838, #363636, #343434, #595959, #818181, #acacac, #d8d8d8);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTreatmentFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="3.0" prefHeight="56.0" prefWidth="675.0" text="Add Treatments" textFill="#bfbbbb">
+         <font>
+            <Font name="Arial Bold Italic" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTreatmentID" alignment="CENTER" layoutX="277.0" layoutY="101.0" prefHeight="32.0" prefWidth="113.0" text="Treatment ID" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTreatment" layoutX="220.0" layoutY="156.0" prefHeight="39.0" prefWidth="231.0" promptText="Treatment Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtDoctor" layoutX="203.0" layoutY="227.0" prefHeight="39.0" prefWidth="267.0" promptText="Doctor Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtHospital" layoutX="215.0" layoutY="297.0" prefHeight="39.0" prefWidth="237.0" promptText="Hospital">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnAdd" layoutX="220.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="39.0" prefWidth="84.0" style="-fx-border-radius: 1em;" text="Add">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnBack" layoutX="360.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="39.0" prefWidth="84.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

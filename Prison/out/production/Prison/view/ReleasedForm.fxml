@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="344.0" prefWidth="672.0" style="-fx-background-color: linear-gradient(to left top, #ffffff, #eae8fc, #d2d2fa, #b6bdf8, #96a9f6, #7e99f6, #6289f6, #3c79f5, #2666f4, #1652f1, #1839eb, #2715e3);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReleasedFormController">
+   <children>
+      <Label alignment="CENTER" layoutY="-3.0" prefHeight="44.0" prefWidth="672.0" text="Released Details">
+         <font>
+            <Font name="Arial Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="14.0" layoutY="41.0" prefHeight="35.0" prefWidth="138.0" text="Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="540.0" layoutY="41.0" prefHeight="35.0" prefWidth="131.0" text="Time">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbSurname" editable="true" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="99.0" prefHeight="25.0" prefWidth="242.0" promptText="Surname" unFocusColor="BLACK" />
+      <JFXComboBox fx:id="cmbName" editable="true" focusColor="BLACK" labelFloat="true" layoutX="407.0" layoutY="99.0" prefHeight="25.0" prefWidth="242.0" promptText="Name" unFocusColor="BLACK" />
+      <JFXTextField fx:id="txtPid" focusColor="BLACK" labelFloat="true" layoutX="14.0" layoutY="157.0" prefHeight="35.0" prefWidth="138.0" promptText="Prisoner ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRid" focusColor="BLACK" labelFloat="true" layoutX="411.0" layoutY="157.0" prefHeight="35.0" prefWidth="138.0" promptText="Released ID" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="284.0" layoutY="250.0" onAction="#btnSaveOnAction" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: linear-gradient(to left top, #ffffff, #eae8fc, #d2d2fa, #b6bdf8, #96a9f6, #96a9f6, #96a9f6, #96a9f6, #b6bdf8, #d2d2fa, #eae8fc, #ffffff);;" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+DROP DATABASE IF EXISTS kingslandStudentManagementSystem;
+CREATE DATABASE IF NOT EXISTS kingslandStudentManagementSystem;
+
+CREATE TABLE student(
+id VARCHAR(10) NOT NULL PRIMARY KEY,
+studentName(45) NOT NULL,
+address VARCHAR(45) NOT NULL,
+contact VARCHAR(45) NOT NULL,
+dob DATE,
+gender VARCHAR(45)
+);
+
+CREATE TABLE course(
+codeID VARCHAR(20) NOT NULL PRIMARY KEY ,
+courseName VARCHAR(45) NOT NULL ,
+duration VARCHAR(20) NOT NULL ,
+registrationFee INT(10) NOT NULL,
+intake VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE registration(
+regNo INT AUTO_INCREMENT PRIMARY KEY ,
+regDate VARCHAR(45) NOT NULL ,
+regFee DOUBLE(10,2) NOT NULL ,
+studentID VARCHAR(10) NOT NULL,
+codeID VARCHAR(20) NOT NULL,
+CONSTRAINT FOREIGN KEY (studentID) REFERENCES student(studentID),
+CONSTRAINT FOREIGN KEY (course) REFERENCES course(codeID)
+);

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="context" prefHeight="654.0" prefWidth="1253.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PrisonerUpdateFormController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="12.0" prefHeight="268.0" prefWidth="462.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;">
+         <children>
+            <Label fx:id="lblCdID" layoutX="24.0" layoutY="8.0" prefHeight="34.0" prefWidth="72.0" text="Co-Detail ID" textFill="WHITE" />
+            <Label layoutX="108.0" layoutY="8.0" prefHeight="34.0" prefWidth="46.0" text="PID" textFill="WHITE" />
+            <ComboBox fx:id="cmbPID" layoutX="143.0" layoutY="13.0" prefHeight="25.0" prefWidth="88.0" />
+            <ComboBox fx:id="cmbCrime" layoutX="242.0" layoutY="13.0" prefHeight="25.0" prefWidth="115.0" promptText="Crime" />
+            <Label fx:id="lblCrimeID" layoutX="366.0" layoutY="13.0" prefHeight="25.0" prefWidth="88.0" text="Crime ID" textFill="WHITE" />
+            <TextField fx:id="txtPunishment" layoutX="12.0" layoutY="67.0" prefHeight="34.0" prefWidth="348.0" promptText="Punishment" />
+            <TextField fx:id="txtPunishedDate" layoutX="12.0" layoutY="125.0" prefHeight="34.0" prefWidth="183.0" promptText="Punished Date" />
+            <TextField fx:id="txtCourtTime" layoutX="12.0" layoutY="217.0" prefHeight="34.0" prefWidth="183.0" promptText="CourtTime" />
+            <JFXDatePicker fx:id="nextCourtDay" defaultColor="WHITE" layoutX="12.0" layoutY="172.0" prefHeight="34.0" prefWidth="171.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="508.0" layoutY="12.0" prefHeight="268.0" prefWidth="478.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); -fx-background-radius: 1em;">
+         <children>
+            <Label fx:id="lblTrDetailsID" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="100.0" text="Tr-Detail ID" textFill="WHITE" />
+            <ComboBox fx:id="cmbTreatment" layoutX="184.0" layoutY="10.0" prefHeight="34.0" prefWidth="150.0" promptText="Treatment" />
+            <TextField fx:id="txtProgress" layoutX="14.0" layoutY="100.0" prefHeight="34.0" prefWidth="340.0" promptText="Health Progress" />
+            <JFXDatePicker fx:id="dateDate" defaultColor="WHITE" layoutX="14.0" layoutY="52.0" prefHeight="34.0" prefWidth="171.0" />
+            <JFXComboBox fx:id="cmbDoctor" focusColor="WHITE" layoutX="14.0" layoutY="155.0" prefHeight="34.0" prefWidth="202.0" promptText="Doctor" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="cmbHospital" focusColor="WHITE" layoutX="14.0" layoutY="220.0" prefHeight="34.0" prefWidth="202.0" promptText="Hospital" unFocusColor="WHITE" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+      <TableView layoutX="104.0" layoutY="319.0" prefHeight="235.0" prefWidth="889.0">
+        <columns>
+          <TableColumn text="PID" />
+          <TableColumn prefWidth="88.0" text="CID" />
+            <TableColumn prefWidth="89.0" text="TID" />
+            <TableColumn prefWidth="146.0" text="Court Date" />
+            <TableColumn prefWidth="151.0" text="Court Time" />
+            <TableColumn prefWidth="334.0" text="Health Progress" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="469.0" layoutY="571.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="79.0" text="Back" />
+      <JFXButton fx:id="btnReleased" alignment="CENTER" buttonType="RAISED" layoutX="1035.0" layoutY="24.0" onAction="#btnReleasedOnAction" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);" text="Released Prisoner " textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnTreateDoc" alignment="CENTER" layoutX="1035.0" layoutY="80.0" onAction="#btnTreateOnAction" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);" text="Treate &amp; Doctor" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" alignment="CENTER" layoutX="1035.0" layoutY="134.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>

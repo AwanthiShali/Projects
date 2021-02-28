@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1340.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <AnchorPane prefHeight="700.0" prefWidth="131.0" style="-fx-background-color: linear-gradient(to right top, #4a98a8, #36849c, #25708f, #1a5c81, #174871, #144b74, #114f76, #0e5279, #126d8d, #28889e, #46a3ad, #69beb9);;">
+         <children>
+            <Button fx:id="btnPrisoners" layoutX="18.0" layoutY="117.0" mnemonicParsing="false" onAction="#btnPrisonersOnAction" prefHeight="56.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to left top, #845ec2, #745fbd, #655fb8, #565fb1, #485eaa, #4357a2, #3e5099, #394991, #3c3a85, #3f2b77, #411969, #420059);;" text="Prisoner" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnVisitors" layoutX="18.0" layoutY="234.0" mnemonicParsing="false" onAction="#btnVisitorsOnAction" prefHeight="56.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to left top, #845ec2, #745fbd, #655fb8, #565fb1, #485eaa, #4357a2, #3e5099, #394991, #3c3a85, #3f2b77, #411969, #420059);;" text="Visitor" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnGuard" layoutX="18.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnGuardOnAction" prefHeight="56.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to left top, #845ec2, #745fbd, #655fb8, #565fb1, #485eaa, #4357a2, #3e5099, #394991, #3c3a85, #3f2b77, #411969, #420059);;" text="Guard" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnReports" layoutX="18.0" layoutY="468.0" mnemonicParsing="false" onAction="#btnReportsOnAction" prefHeight="56.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to left top, #845ec2, #745fbd, #655fb8, #565fb1, #485eaa, #4357a2, #3e5099, #394991, #3c3a85, #3f2b77, #411969, #420059);;" text="All Report" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnLogout" layoutX="17.0" layoutY="585.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="56.0" prefWidth="96.0" style="-fx-background-color: linear-gradient(to left top, #845ec2, #745fbd, #655fb8, #565fb1, #485eaa, #4357a2, #3e5099, #394991, #3c3a85, #3f2b77, #411969, #420059);;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="98.0" fitWidth="79.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asserts/national.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="129.0" prefHeight="47.0" prefWidth="1340.0" style="-fx-background-color: linear-gradient(to right top, #4a98a8, #36849c, #25708f, #1a5c81, #174871, #144b74, #114f76, #0e5279, #126d8d, #28889e, #46a3ad, #69beb9);;">
+         <children>
+            <Label prefHeight="34.0" prefWidth="96.0" text="DASHBOARD" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="anchorPaneMain" layoutX="131.0" layoutY="46.0" prefHeight="654.0" prefWidth="1340.0" />
+   </children>
+</AnchorPane>

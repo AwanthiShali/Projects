@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.kingsland.srp.controller.AddNewStudentFormController">
+    <Label alignment="CENTER" layoutX="277.0" layoutY="24.0" text="Student Manager">
+        <font>
+            <Font name="System Bold" size="24.0" />
+        </font>
+    </Label>
+    <Label layoutX="238.0" layoutY="95.0" text="Student ID">
+        <font>
+            <Font size="13.0" />
+        </font>
+    </Label>
+    <!--      <Label fx:id="lblSID" layoutX="331.0" layoutY="96.0" prefHeight="17.0" prefWidth="62.0" />-->
+    <Label layoutX="331.0" layoutY="96.0" prefHeight="17.0" prefWidth="62.0" />
+    <JFXButton layoutX="427.0" layoutY="92.0" onAction="#btnNewStudent" text="New Student" />
+    <JFXComboBox fx:id="cblStudentID" layoutX="321.0" layoutY="92.0" onAction="#cblGetStudentID" prefHeight="25.0" prefWidth="73.0" />
+    <JFXTextField fx:id="txtFullName" labelFloat="true" layoutX="239.0" layoutY="159.0" prefHeight="25.0" prefWidth="273.0" promptText="Full Name" />
+    <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="239.0" layoutY="206.0" prefHeight="25.0" prefWidth="273.0" promptText="Address" />
+    <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="239.0" layoutY="255.0" prefHeight="25.0" prefWidth="273.0" promptText="Contact" />
+    <JFXTextField fx:id="txtDOB" labelFloat="true" layoutX="239.0" layoutY="302.0" prefHeight="25.0" prefWidth="273.0" promptText="DOB (YYYY-MM-DD)" />
+    <JFXComboBox fx:id="cblGender" labelFloat="true" layoutX="241.0" layoutY="349.0" onAction="#cblSelectGender" prefHeight="25.0" prefWidth="96.0" promptText="Gender">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Male" />
+                <String fx:value="Female" />
+            </FXCollections>
+        </items>
+    </JFXComboBox>
+    <JFXTextField fx:id="txtDate" editable="false" layoutX="239.0" layoutY="388.0" prefHeight="25.0" prefWidth="273.0" />
+    <JFXComboBox fx:id="cblSelectCourse" labelFloat="true" layoutX="241.0" layoutY="428.0" onAction="#cmbSelectGender" prefHeight="25.0" prefWidth="104.0" promptText="Select Course" />
+    <JFXButton fx:id="btnRegister" disable="true" layoutX="339.0" layoutY="514.0" onAction="#btnRegister" prefHeight="35.0" prefWidth="73.0" text="Register" />
+    <JFXTextField fx:id="txtRegFee" labelFloat="true" layoutX="239.0" layoutY="467.0" prefHeight="25.0" prefWidth="273.0" promptText="Registration Fee" />
+</AnchorPane>

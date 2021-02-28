@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="642.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.kingsland.srp.controller.DashBoardFormController">
+    <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="885.0" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Pane layoutY="40.0" prefHeight="600.0" prefWidth="135.0" style="-fx-background-color: #f5f6fa;">
+                <children>
+                    <Pane layoutX="10.0" layoutY="72.0" onMouseReleased="#btnReg" prefHeight="94.0" prefWidth="116.0" style="-fx-background-color: #dcdde1;">
+                        <children>
+                            <Label alignment="CENTER" layoutX="10.0" layoutY="66.0" prefHeight="17.0" prefWidth="95.0" text="Registration" />
+                            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="31.0" layoutY="5.0">
+                                <image>
+                                    <Image url="@../assets/icons8-create-64.png" />
+                                </image>
+                            </ImageView>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="10.0" layoutY="253.0" onMouseReleased="#btnAddCourse" prefHeight="94.0" prefWidth="116.0" style="-fx-background-color: #dcdde1;">
+                        <children>
+                            <Label alignment="CENTER" layoutX="11.0" layoutY="66.0" prefHeight="17.0" prefWidth="95.0" text="Add Course" />
+                            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="31.0" layoutY="8.0">
+                                <image>
+                                    <Image url="@../assets/icons8-create-order-64.png" />
+                                </image>
+                            </ImageView>
+                        </children>
+                    </Pane>
+                    <Pane layoutX="10.0" layoutY="430.0" onMouseReleased="#btnCourseWiseStudent" prefHeight="94.0" prefWidth="116.0" style="-fx-background-color: #dcdde1;">
+                        <children>
+                            <Label alignment="CENTER" layoutX="2.0" layoutY="66.0" text="Course Wise Student" />
+                            <ImageView fitHeight="55.0" fitWidth="55.0" layoutX="30.0" layoutY="9.0">
+                                <image>
+                                    <Image url="@../assets/icons8-list-64.png" />
+                                </image>
+                            </ImageView>
+                        </children>
+                    </Pane>
+                </children>
+            </Pane>
+            <Pane prefHeight="40.0" prefWidth="885.0" style="-fx-background-color: #dcdde1;">
+                <children>
+                    <Label layoutX="662.0" layoutY="12.0" text="Date &amp; time" />
+                    <Label fx:id="dateTime" layoutX="744.0" layoutY="12.0" prefHeight="17.0" prefWidth="122.0" />
+                    <Label layoutX="357.0" layoutY="8.0" text="KingsLand institute">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Label>
+                </children>
+            </Pane>
+         <AnchorPane fx:id="context" layoutX="135.0" layoutY="40.0" prefHeight="600.0" prefWidth="750.0" style="-fx-background-color: white;" />
+        </children>
+    </Pane>
+</AnchorPane>
